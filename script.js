@@ -22,3 +22,31 @@ for (let i = 0; i < finish; i++) {
         outputConsole(i + " нечётное")
     }
 }
+
+outputConsole("\nЗАДАНИЕ 3")
+let matrixDimension = 8
+let charToAdd = ""
+allString = ""
+for (let i = 0; i < matrixDimension; i++) {
+    if (i % 2 == 0) {
+        for (let j = 0; j < matrixDimension; j++) {
+            if (j % 2 == 0) {
+                charToAdd = "#"
+            } else {
+                charToAdd = " "
+            }
+            allString += charToAdd
+        }
+    } else {
+        for (let k = 0; k < matrixDimension; k++) {
+            if (k % 2 == 0) {
+                charToAdd = " "
+            } else {
+                charToAdd = "#"
+            }
+            allString += charToAdd
+        }
+    }
+    outputConsole(allString)
+    allString = ""
+}
